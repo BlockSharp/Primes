@@ -8,6 +8,7 @@ namespace Primes
     {
         /// <summary>
         /// First known primes
+        /// Before change they were until 349
         /// </summary>
         public static readonly int[] FirstPrimes =
         {
@@ -20,20 +21,7 @@ namespace Primes
             757, 761, 769, 773, 787, 797, 809, 811, 821, 823, 827, 829, 839, 853, 857, 859, 863, 877, 881, 883, 887,
             907, 911, 919, 929, 937, 941, 947, 953, 967, 971, 977, 983, 991, 997
         };
-       /* public static readonly int[] FirstPrimes =
-        {
-            2, 3, 5, 7, 11, 13, 17, 19, 23, 29,
-            31, 37, 41, 43, 47, 53, 59, 61, 67,
-            71, 73, 79, 83, 89, 97, 101, 103,
-            107, 109, 113, 127, 131, 137, 139,
-            149, 151, 157, 163, 167, 173, 179,
-            181, 191, 193, 197, 199, 211, 223,
-            227, 229, 233, 239, 241, 251, 257,
-            263, 269, 271, 277, 281, 283, 293,
-            307, 311, 313, 317, 331, 337, 347, 349
-        };*/
-       
-
+        
         /// <summary>
         /// Get low level prime
         /// </summary>
@@ -169,7 +157,14 @@ namespace Primes
             return true;
         }
 
+        /// <summary>
+        /// Indicates if integer a and b are co-prime
+        /// </summary>
+        /// <param name="a">Integer a</param>
+        /// <param name="b">Integer b</param>
+        /// <returns>True if co-prime (Greatest Common Factor = 1)</returns>
+        public static bool AreCoPrime(BigInteger a, BigInteger b)
+            => Mathematics.GCF(a, b) == 1;
 
-        
     }
 }

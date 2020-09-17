@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Primes", "Primes\Primes.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Primes.Tests", "Primes.Tests\Primes.Tests.csproj", "{6A43DE99-175B-44D4-BB3B-6E4A9494B039}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Primes.Example", "Primes.Example\Primes.Example.csproj", "{EB4D1312-ADE8-4773-9C3F-6472471F296D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,17 @@ Global
 		{6A43DE99-175B-44D4-BB3B-6E4A9494B039}.Release|x64.Build.0 = Release|Any CPU
 		{6A43DE99-175B-44D4-BB3B-6E4A9494B039}.Release|x86.ActiveCfg = Release|Any CPU
 		{6A43DE99-175B-44D4-BB3B-6E4A9494B039}.Release|x86.Build.0 = Release|Any CPU
+		{EB4D1312-ADE8-4773-9C3F-6472471F296D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB4D1312-ADE8-4773-9C3F-6472471F296D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB4D1312-ADE8-4773-9C3F-6472471F296D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EB4D1312-ADE8-4773-9C3F-6472471F296D}.Debug|x64.Build.0 = Debug|Any CPU
+		{EB4D1312-ADE8-4773-9C3F-6472471F296D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EB4D1312-ADE8-4773-9C3F-6472471F296D}.Debug|x86.Build.0 = Debug|Any CPU
+		{EB4D1312-ADE8-4773-9C3F-6472471F296D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB4D1312-ADE8-4773-9C3F-6472471F296D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB4D1312-ADE8-4773-9C3F-6472471F296D}.Release|x64.ActiveCfg = Release|Any CPU
+		{EB4D1312-ADE8-4773-9C3F-6472471F296D}.Release|x64.Build.0 = Release|Any CPU
+		{EB4D1312-ADE8-4773-9C3F-6472471F296D}.Release|x86.ActiveCfg = Release|Any CPU
+		{EB4D1312-ADE8-4773-9C3F-6472471F296D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
