@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Primes.Tests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Primes.Tests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Primes.Tests\**" />
+  </ItemGroup>
+
+</Project>
