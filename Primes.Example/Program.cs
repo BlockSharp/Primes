@@ -10,6 +10,7 @@ namespace Primes.Example
     {
         static void Main(string[] args)
         {
+            
             BigInteger p = PrimeGenerator.GetPrime1(1024);
             BigInteger q = PrimeGenerator.GetPrime1(1024);
 
