@@ -6,47 +6,37 @@ namespace Primes
 {
     public static class PrimeGenerator
     {
-        public static BigInteger GetPrime1(int bitSize = 1024)
+        public static BigInteger GetPrime1(int size = 1024)
         {
-            int iter = 0;
-            Stopwatch sw = new Stopwatch();
-            sw.Start();
-            
-            while (true)
+            var sw = Stopwatch.StartNew();
+
+            for (int i = 0;; i++)
             {
-                BigInteger prime_canidate = PrimeChecker.GetLowLevelPrime(bitSize);
-                if (!PrimeChecker.IsPrimeMillerRabin(prime_canidate))
+                Console.WriteLine(i);
+                BigInteger candidate = PrimeChecker.GetLowLevelPrime(size);
+
+                if (PrimeChecker.IsPrimeMillerRabin(candidate))
                 {
-                    iter++;
-                    Console.WriteLine(iter);
-                }
-                else
-                {
-                    Console.WriteLine($"PRIME FOUND in {sw.Elapsed}!! "+prime_canidate);
-                    sw.Stop();
-                    return prime_canidate;
+                    Console.WriteLine($"PRIME FOUND in {sw.Elapsed}!! " + candidate);
+                    return candidate;
                 }
             }
         }
 
-        public static BigInteger GetPrime2(int n = 1024)
+        public static BigInteger GetPrime2(int size = 1024)
         {
-            int iter = 0;
-            Stopwatch sw = new Stopwatch();
-            sw.Start();
-            
-            while (true)
-            {
-                var canidate = PrimeChecker.GetLowLevelPrime(n);
+            var sw = Stopwatch.StartNew();
 
-                if (PrimeChecker.IsPrime(canidate))
+            for (int i = 0;; i++)
+            {
+                Console.WriteLine(i);
+                var candidate = PrimeChecker.GetLowLevelPrime(size);
+
+                if (candidate.IsPrime())
                 {
-                    Console.WriteLine($"PRIME FOUND in {sw.Elapsed}!! "+canidate);
-                    sw.Stop();
-                    return canidate;
+                    Console.WriteLine($"PRIME FOUND in {sw.Elapsed}!! " + candidate);
+                    return candidate;
                 }
-                
-                Console.WriteLine(++iter);
             }
         }
     }

@@ -63,5 +63,14 @@ namespace Primes
             
             return x;
         }
+        
+        /// <summary>
+        /// Indicates if integer a and b are co-prime
+        /// </summary>
+        /// <param name="a">Integer a</param>
+        /// <param name="b">Integer b</param>
+        /// <returns>True if co-prime (Greatest Common Factor = 1)</returns>
+        public static bool AreCoPrime(BigInteger a, BigInteger b)
+            => GCF(a, b) == 1;
     }
 }

@@ -42,7 +42,7 @@ namespace Primes
             var e = new BigInteger(65537); //Also RsaCryptoServiceProvider uses this preselected value.
             
             //Check if e is correct, just for sure
-            if(!PrimeChecker.AreCoPrime(e, λn))
+            if(!Mathematics.AreCoPrime(e, λn))
                 throw new ArgumentException("The value e is wrongly chosen.");
             
             //5. Determine d as d ≡ e−1 (mod λ(n)); that is, d is the modular multiplicative inverse of e modulo λ(n). 
