@@ -1,3 +1,6 @@
+# WARNING
+## This repo is now archived, logic is moved to the [BlockChain repo](https://github.com/BlockSharp/BlockChain) 
+
 # Primes
 Prime generator for c# and RSA key generator
 
